@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎉 Feliz Aniversário, Evelyn! 💖</title>
+  <style>
+    body {
+      background: linear-gradient(180deg, #ffffff, #f9f9f9, #ffe6f2);
+      font-family: "Poppins", "Comic Sans MS", cursive, sans-serif;
+      color: #000;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    header {
+      padding: 40px 20px;
+      background: linear-gradient(90deg, #ff4da6, #0077ff, #00cc66, #ff3333);
+      border-bottom: 4px solid #fff;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .hearts {
+      font-size: 2em;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Contador */
+    .contador {
+      background: #fff;
+      border: 3px solid #ff4da6;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 25px 35px;
+      margin: 30px auto;
+      box-shadow: 0 0 15px rgba(255, 77, 166, 0.4);
+      font-size: 1.4em;
+      font-weight: bold;
+      max-width: 90%;
+      color: #111;
+    }
+
+    .contador span {
+      color: #ff4da6;
+      font-size: 1.6em;
+    }
+
+    /* Cards de vídeo */
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .video-card {
+      background: #fff;
+      border: 3px solid #0077ff;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 119, 255, 0.3);
+      padding: 15px;
+      width: 320px;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: scale(1.05);
+      border-color: #ff4da6;
+      box-shadow: 0 0 20px rgba(255, 77, 166, 0.6);
+    }
+
+    .video-card h3 {
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    iframe, video {
+      width: 100%;
+      height: 200px;
+      border-radius: 15px;
+      border: none;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      border-top: 4px solid #ff4da6;
+      font-size: 1.1em;
+    }
+
+    .sparkles {
+      font-size: 1.3em;
+      color: #ff4da6;
+      animation: sparkle 2s infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* Balões coloridos 🎈 */
+    .balao {
+      position: absolute;
+      bottom: -150px;
+      font-size: 2.5em;
+      opacity: 0.9;
+      animation: subir 10s linear infinite;
+    }
+
+    @keyframes subir {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-120vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎉💖 Feliz Aniversário, Evelyn!!! 💐🎉</h1>
+    <h2>✨ Com todo amor da sua família e amigos ✨</h2>
+    <div class="hearts">💙💚💗❤️🖤💖</div>
+  </header>
+
+  <!-- Contador -->
+  <div class="contador">
+    💫 Evelyn está encantando o mundo há <span id="dias"></span> dias! 💕<br>
+    🌷 Isso significa <span id="idade"></span> de amor e alegria! 🎉
+  </div>
+
+  <!-- Música -->
+  <audio id="musica" autoplay loop>
+    <source src="musica.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Balões -->
+  <div id="baloes-container"></div>
+
+  <!-- Vídeos -->
+  <section class="videos">
+    <div class="video-card">
+      <h3>💗 Mensagem da Mamãe 💕</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>💙 Mensagem do Papai 💖</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>💜 Mensagem da Vovó 🥰</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>💛 Mensagem do Vovô 👴💞</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>🌸 Mensagem da Tia Vera 💕</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>🌷 Mensagem da Prima 💝</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>💫 Mensagem do Irmão 💙</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>💖 Mensagem da Irmã 🌸</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>🎉 Mensagem do Amigo Eduardo 😄</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>🎀 Mensagem da Amiga Luiza 💕</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌈💐 Com muito carinho, todos que te amam, Evelyn 💕🎀</p>
+    <p class="sparkles">✨ Você é uma luz que ilumina nossas vidas! ✨</p>
+  </footer>
+
+  <script>
+    // Música desbloqueada
+    const musica = document.getElementById('musica');
+    document.body.addEventListener('click', () => {
+      if (musica.paused) musica.play();
+    });
+
+    // Balões coloridos 🎈
+    const baloes = ['🎈','💙','💚','💗','❤️','🖤','💖'];
+    const container = document.getElementById('baloes-container');
+    function criarBalao() {
+      const balao = document.createElement('div');
+      balao.classList.add('balao');
+      balao.textContent = baloes[Math.floor(Math.random() * baloes.length)];
+      balao.style.left = Math.random() * 100 + 'vw';
+      balao.style.animationDuration = 6 + Math.random() * 6 + 's';
+      container.appendChild(balao);
+      setTimeout(() => balao.remove(), 12000);
+    }
+    setInterval(criarBalao, 800);
+
+    // Contador de dias
+    const nascimento = new Date("2002-11-30");
+    const hoje = new Date();
+    const diff = hoje - nascimento;
+    const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById("dias").textContent = dias.toLocaleString("pt-BR");
+
+    let anos = hoje.getFullYear() - nascimento.getFullYear();
+    let meses = hoje.getMonth() - nascimento.getMonth();
+    let diasRestantes = hoje.getDate() - nascimento.getDate();
+
+    if (diasRestantes < 0) {
+      meses--;
+      const mesAnterior = new Date(hoje.getFullYear(), hoje.getMonth(), 0);
+      diasRestantes += mesAnterior.getDate();
+    }
+    if (meses < 0) {
+      anos--;
+      meses += 12;
+    }
+
+    document.getElementById("idade").textContent =
+      `${anos} anos, ${meses} meses e ${diasRestantes} dias`;
+  </script>
+</body>
+</html>
